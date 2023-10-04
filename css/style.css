@@ -140,6 +140,8 @@
 	font-weight: 700;
 	color: #428e9a;
 }
+
+
 /* ================================================================================== 
 										Reset Css
 ===================================================================================== */
@@ -219,7 +221,6 @@ p {
   background: #428e9a;
 }
 .block {
-	float: left;
 	width: 100%;
 	padding: 60px 0;
 	position: relative;
@@ -1836,27 +1837,36 @@ footer:hover {
 }
 
 /* ======== director-info =========== */
+@media (min-width: 600) {
+	.director-info div {
+	padding-right: 50px !important;
+}
+}
 
 
 .contractor-details {
 	float: left;
-	width: 100%;
+	width: 80%;
 	padding-left: 200px;
 }
 .director-info {
-	float: left;
+	
 	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .director-img {
 	float: left;
 	width: 100%;
-	padding-right: 85px;
+
 }
 .director-details {
 	float: left;
 	width: 100%;
 	padding: 60px 0 0 0;
 	border-top: 3px solid #428e9a;
+	margin-bottom: 25px;
 }
 .director-details h3 {
 	font-size: 28px;
@@ -1890,6 +1900,7 @@ footer:hover {
 .director-details ul li a {
 	color: #999999;
 	font-size: 24px !important;
+	
 }
 .director-details ul li a:hover {
 	color: #428e9a;
